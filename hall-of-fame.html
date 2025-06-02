@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏆 Hall of Fame</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hall-of-fame.css">
+</head>
+
+<body>
+
+    <!-- Secondary Header (Announcements & Quick Links) -->
+    <div class="secondary-header" id="secondaryHeader">
+        <div class="quick-links">
+            <a href="mailto:henrymillsdel@gmail.com"><i class="fas fa-envelope"></i> motherprovidenciasch@gmail.com</a>
+            <a href="tel:+233555116438"><i class="fas fa-phone"></i> 0207563043 / 0551111186</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Adenta, New Legon(Rosa - Rosa)</a>
+            <a href="#"><i class="fas fa-clock"></i> 8:00am - 4:00pm (Mon-Fri)</a>
+        </div>
+        <div class="social-media">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <a href="#" id="searchLink"><i class="fas fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header (Primary Navigation) -->
+    <header class="main-header" id="mainHeader">
+        <div class="logo">
+            <img src="img/mlogo.png" alt="School Logo" />
+            <h2>Mother Providencia Catholic School</h2>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="../home.html/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-info-circle"></i> About Us +</a>
+                    <ul class="submenu">
+                        <li><a href="../head/head.html">Headmistress Message</a></li>
+                        <li><a href="../about us/about.html">Our History</a></li>
+                        <li><a href="../Academics/bpard/board.html">School Management</a></li>
+                        <li><a href="../student/std.html">Student Leadership</a></li>
+                        <li><a href="../School anthem/anthem.html">School Anthem/Hymn</a></li>
+                        <li><a href="../Hall-of-fame/hall-of-fame.html">Alumni / Hall Of Fame</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-book"></i> Academics +</a>
+                    <ul class="submenu">
+                        <li><a href="../Academics/curriculum.html">Curriculum</a></li>
+                        <li><a href="../staff/staff.html">Staff / Department</a></li>
+                        <li><a href="../Academics/presch/presch.html">Pre-School</a></li>
+                        <li><a href="../Academics/primary/primary.html">Primary</a></li>
+                        <li><a href="../Academics/jhs/jhs.html">JHS</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-newspaper"></i> News & Events +</a>
+                    <ul class="submenu">
+                        <li><a href="#">News and Updates</a></li>
+                        <li><a href="#">Archived News</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-user"></i> Admissions +</a>
+                    <ul class="submenu">
+                        <li><a href="../admission/admission.html">Admission Procedure</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="../pta/facility.html"><i class="fas fa-school"></i> Facilities </a>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-heart"></i> Activities +</a>
+                    <ul class="submenu">
+                        <li><a href="#">Spiritual & Social Guidance</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-image"></i> Gallery</a>
+                    <ul class="submenu">
+                        <li><a href="../gallery/gallery.html">Photo Gallery</a></li>
+                        <li><a href="../gallery/gallery.html">Video Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact/contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+    <!-- Banner Section -->
+    <section id="hero">
+        <div class="hero-slider">
+            <div class="arrow prev">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="arrow next">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+
+            <!-- Slider-wraper-start -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/olaf-school (1).jpg" alt="Slide Image" class="slide-img" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-3.jpg" alt="Slide Image" class="slide-img" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-4.jpg" alt="Slide Image" class="slide-img" />
+                    </div>
+                </div>
+            </div>
+            <!-- Slider-wraper-end -->
+
+            <!-- Slider-controler-start -->
+            <div class="slider-controler"></div>
+            <!-- Slider-controler-end -->
+        </div>
+    </section>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- ANIMATED TEXT -->
+    <section class="animated-text-section">
+        <h2 class="animated-text" data-text="hall...">hall...</h2>
+        <h2 class="animated-text" data-text="of...">of...</h2>
+        <h2 class="animated-text" data-text="fame...">fame...</h2>
+    </section>
+
+
+
+    <div style="background-color: #3610a0; padding: 10px;">
+        <marquee scrollamount="5" width="100%" style="color: white;">
+            “Education is the most powerful weapon which you can use to change the world.” – Nelson Mandela
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            📅 2025 Admissions Now Open! Enroll Today and Join the Journey of Excellence.
+        </marquee>
+
+    </div>
+
+    <section class="hof-hero">
+        <p>Celebrating Excellence Through the Years</p>
+    </section>
+
+    <div class="hof-filters">
+        <select id="yearFilter">
+            <option value="all">All Years</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+        </select>
+    </div>
+
+    <!-- GRID CARD FILTER  -->
+    <div class="hof-grid" id="hofGrid">
+        <!-- Example cards -->
+        <div class="hof-card" data-year="2025">
+            <img src="img/banner-right-image.png" alt="Student">
+            <div class="hof-info">
+                <h3>Jane Doe</h3>
+                <p>Best in Academics - 2025</p>
+            </div>
+        </div>
+        <div class="hof-card" data-year="2024">
+            <img src="img/about-left-image.png" alt="Student">
+            <div class="hof-info">
+                <h3>John Smith</h3>
+                <p>Best Sportsman - 2024</p>
+            </div>
+        </div>
+        <div class="hof-card" data-year="2024">
+            <img src="img/team-member-thumb-04.jpg" alt="Student">
+            <div class="hof-info">
+                <h3>John Smith</h3>
+                <p>Best Sportsman - 2024</p>
+            </div>
+        </div>
+        <div class="hof-card" data-year="2024">
+            <img src="img/team-member-01.jpg" alt="Student">
+            <div class="hof-info">
+                <h3>John Smith</h3>
+                <p>Best Sportsman - 2024</p>
+            </div>
+        </div>
+        <div class="hof-card" data-year="2024">
+            <img src="img/team-member-03.jpg" alt="Student">
+            <div class="hof-info">
+                <h3>John Smith</h3>
+                <p>Best Sportsman - 2024</p>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <!-- FOOTER  -->
+    <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <div class="footer">
+
+                <div class="single-footer logo-footer">
+                    <img src="img/logo.jpg" alt="School Logo" class="footer-logo">
+                    <!-- replace img path and filename accordingly -->
+
+                    <div class="single-footer footer-social-container">
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-footer">
+                    <h4>Main Menu</h4>
+                    <ul>
+                        <li><a href="/home.html/index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="/home.html/index.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="/admission/admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                        <li><a href="/gallery/gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="single-footer">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/home.html/index.html"><i class="fas fa-chevron-right"></i> News & Updates</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Pre-School</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Primary</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> JHS</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Our History</a></li>
+                    </ul>
+                </div>
+
+                <div class="single-footer">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="/contact/contact.html"><i class="fas fa-map-marker-alt"></i> Adenta, New Legon
+                                (Rosa - Rosa)</a></li>
+                        <li><a href="tel:0207563043"><i class="fas fa-mobile-alt"></i> 0207563043</a></li>
+                        <li><a href="tel:0551111186"><i class="fas fa-mobile-alt"></i> 0551111186</a></li>
+                        <li><a href="mailto:motherprovidenciasch@gmail.com"><i class="far fa-envelope"></i>
+                                motherprovidenciasch@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-globe-europe"></i> www.demo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy">
+                <p>&copy; 2020 all rights reserved</p>
+                <p class="powered-by">Powered by <a href="https://innovexlabs.com" target="_blank">InnovexLabs</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scrolling button    -->
+    <button id="scrollTopBtn">&#8679;</button>
+
+    <!-- SCRIPT FOR SEARCH ON SITE     -->
+    <script>
+        document.getElementById("searchLink").addEventListener("click", function (e) {
+            e.preventDefault(); // Stop default link behavior
+
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const allLinks = document.querySelectorAll("nav a");
+
+            for (let link of allLinks) {
+                const text = link.textContent.toLowerCase();
+                if (text.includes(input) && input !== "") {
+                    // Open the first matched link in a new page
+                    window.location.href = link.getAttribute("href");
+                    return;
+                }
+            }
+
+            // If no match found
+            alert("No matching page found.");
+        });
+    </script>
+
+    <!-- GRID FILTEER -->
+    <script>
+        const filter = document.getElementById('yearFilter');
+        const cards = document.querySelectorAll('.hof-card');
+
+        function filterCards() {
+            const year = filter.value;
+
+            cards.forEach((card, index) => {
+                const cardYear = card.getAttribute('data-year');
+
+                if (year === 'all' || cardYear === year) {
+                    card.style.display = 'flex';
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, index * 100); // stagger effect
+                } else {
+                    card.classList.remove('visible');
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        filter.addEventListener('change', () => {
+            cards.forEach(card => card.classList.remove('visible'));
+            setTimeout(filterCards, 100);
+        });
+
+        // Initial display
+        filterCards();
+    </script>
+
+    <!-- BANNER Slider JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slider = document.querySelector(".slider");
+            const slides = document.querySelectorAll(".slide");
+            const nextBtn = document.querySelector(".next");
+            const prevBtn = document.querySelector(".prev");
+            const dotsContainer = document.querySelector(".slider-controler");
+
+            let currentIndex = 0;
+            let slideInterval;
+
+            // Generate dots
+            slides.forEach((_, i) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                if (i === 0) dot.classList.add("active");
+                dot.addEventListener("click", () => {
+                    currentIndex = i;
+                    updateSlider();
+                    resetAutoSlide();
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            const updateSlider = () => {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                document.querySelectorAll(".dot").forEach((dot, i) => {
+                    dot.classList.toggle("active", i === currentIndex);
+                });
+            };
+
+            const nextSlide = () => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateSlider();
+            };
+
+            const prevSlide = () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateSlider();
+            };
+
+            const startAutoSlide = () => {
+                slideInterval = setInterval(nextSlide, 5000);
+            };
+
+            const resetAutoSlide = () => {
+                clearInterval(slideInterval);
+                startAutoSlide();
+            };
+
+            nextBtn.addEventListener("click", () => {
+                nextSlide();
+                resetAutoSlide();
+            });
+
+            prevBtn.addEventListener("click", () => {
+                prevSlide();
+                resetAutoSlide();
+            });
+
+            // Initialize
+            updateSlider();
+            startAutoSlide();
+        });
+    </script>
+
+    <!-- SCRIPT FOR SEARCH ON SITE     -->
+    <script>
+        document.getElementById("searchLink").addEventListener("click", function (e) {
+            e.preventDefault(); // Stop default link behavior
+
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const allLinks = document.querySelectorAll("nav a");
+
+            for (let link of allLinks) {
+                const text = link.textContent.toLowerCase();
+                if (text.includes(input) && input !== "") {
+                    // Open the first matched link in a new page
+                    window.location.href = link.getAttribute("href");
+                    return;
+                }
+            }
+
+            // If no match found
+            alert("No matching page found.");
+        });
+    </script>
+
+    <!-- ALL MENU AND NAVS    -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menu = document.querySelector(".menu");
+            const submenuParents = document.querySelectorAll(".has-submenu > a");
+
+            // Toggle menu for mobile view
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                document.body.classList.toggle("menu-open");
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                    menu.classList.remove("active");
+                    document.body.classList.remove("menu-open");
+                }
+            });
+
+            // Toggle submenus on mobile
+            submenuParents.forEach(parent => {
+                parent.addEventListener("click", function (event) {
+                    if (window.innerWidth <= 768) {  // Only for mobile
+                        event.preventDefault();
+                        this.nextElementSibling.classList.toggle("submenu-active");
+                    }
+                });
+            });
+
+            // Sticky header with secondary header hide/show
+            window.addEventListener("scroll", function () {
+                const secondaryHeader = document.getElementById("secondaryHeader");
+                const mainHeader = document.getElementById("mainHeader");
+
+                if (window.scrollY > 100) {
+                    secondaryHeader.style.top = "-50px";
+                    mainHeader.classList.add("fixed");
+                } else {
+                    secondaryHeader.style.top = "0";
+                    mainHeader.classList.remove("fixed");
+                }
+            });
+        });
+    </script>
+    <script>
+        function openMenu() {
+            document.querySelector(".mobile-menu").classList.add("active");
+        }
+
+        function closeMenu() {
+            document.querySelector(".mobile-menu").classList.remove("active");
+        }
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            let submenu = event.target.nextElementSibling;
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
